@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring boot集成 Thymeleaf</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td th:text="${student.id}">1</td>
+        <td th:text="${student.name}">a</td>
+        <td th:text="${student.age}">137</td>
+    </tr>
+</table>
+<div th:text="${hello}"></div>
+</body>
+</html>

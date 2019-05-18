@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Thymeleaf</title>
+</head>
+<body>
+<table>
+    <tr th:each="stu,interStat : ${studentList}">
+        <td th:text="${interStat.size}"></td>
+        <td th:text="${stu.id}"></td>
+        <td th:text="${stu.name}"></td>
+        <td th:text="${stu.age}"></td>
+    </tr>
+</table>
+</body>
+</html>
